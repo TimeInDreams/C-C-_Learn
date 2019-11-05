@@ -7,35 +7,35 @@ abc=abc+5-c*2
 ? abc
 end
 
-ÔòÊä³öÎª£º
+åˆ™è¾“å‡ºä¸ºï¼š
 
 c=18
 abc=-21
 
-×¢Òâ£ºÎªÁË¼ò»¯±à³ÌÊµÏÖ£¬ÔËËã·ûÖ»ÓÐ£«£¬£­£¬£ª£¬£¯ £¬%ºÍ£Þ£¨Ö¸ÊýÔËËã£©£¬¿ÉÒÔ´¦ÀíÔ²À¨ºÅ£¨£©£¬²¢¼Ù¶¨ÊäÈëµÄËãÊõ±í´ïÊ½ÕýÈ·¡£
+æ³¨æ„ï¼šä¸ºäº†ç®€åŒ–ç¼–ç¨‹å®žçŽ°ï¼Œè¿ç®—ç¬¦åªæœ‰ï¼‹ï¼Œï¼ï¼Œï¼Šï¼Œï¼ ï¼Œ%å’Œï¼¾ï¼ˆæŒ‡æ•°è¿ç®—ï¼‰ï¼Œå¯ä»¥å¤„ç†åœ†æ‹¬å·ï¼ˆï¼‰ï¼Œå¹¶å‡å®šè¾“å…¥çš„ç®—æœ¯è¡¨è¾¾å¼æ­£ç¡®ã€‚
 
-ÒªÇó£ºÊ¹ÓÃÕ»½á¹¹ÊµÏÖ¡£
+è¦æ±‚ï¼šä½¿ç”¨æ ˆç»“æž„å®žçŽ°ã€‚
 
-ÊäÈë£º±í´ïÊ½ÐòÁÐ
+è¾“å…¥ï¼šè¡¨è¾¾å¼åºåˆ—
 
-Êä³ö£ºÈ«²¿Ö¸¶¨±äÁ¿µÄÖµ
+è¾“å‡ºï¼šå…¨éƒ¨æŒ‡å®šå˜é‡çš„å€¼
 
-±í´ïÊ½ÖÐµÄÈ«²¿¼ÆËã½á¹û¾ùÎªÕûÊý¡£Èç¹ûÔÚ¼ÆËã¹ý³ÌÖÐ³öÏÖ³ýÊýÎª0µÄÇé¿ö£¬ÔòÊä³ö£ºDivide 0.
+è¡¨è¾¾å¼ä¸­çš„å…¨éƒ¨è®¡ç®—ç»“æžœå‡ä¸ºæ•´æ•°ã€‚å¦‚æžœåœ¨è®¡ç®—è¿‡ç¨‹ä¸­å‡ºçŽ°é™¤æ•°ä¸º0çš„æƒ…å†µï¼Œåˆ™è¾“å‡ºï¼šDivide 0.
 
-ÌØÊâÇé¿öËµÃ÷£º
-ÔÚ±í´ïÊ½ÖÐ£¬Èç¹û²Ù×÷Êý³öÏÖ¸ºÊý£¨ÀýÈç-8£©£¬ÔòÒªÌØ±ð×¢Òâ¡£ÀýÈç£º
-10¼Ó-8±íÊ¾Îª£º10+-8¡£
-10¼õ-8±íÊ¾Îª£º10--8¡£
+ç‰¹æ®Šæƒ…å†µè¯´æ˜Žï¼š
+åœ¨è¡¨è¾¾å¼ä¸­ï¼Œå¦‚æžœæ“ä½œæ•°å‡ºçŽ°è´Ÿæ•°ï¼ˆä¾‹å¦‚-8ï¼‰ï¼Œåˆ™è¦ç‰¹åˆ«æ³¨æ„ã€‚ä¾‹å¦‚ï¼š
+10åŠ -8è¡¨ç¤ºä¸ºï¼š10+-8ã€‚
+10å‡-8è¡¨ç¤ºä¸ºï¼š10--8ã€‚
 
 
-Ë¼Â·£º
-	ÈëÕ»¹æÔò£º
-		1.×óÀ¨ºÅÖ±½ÓÈëÕ»
-		2.ÓÒÀ¨ºÅÈëÕ»Ç°£¬Öð´Îµ¯³öËùÓÐ²Ù×÷·û²¢½øÐÐÔËËãÖ±µ½×óÀ¨ºÅ
-		3.¡®-¡¯µÄ´¦Àí£º
-			1.Èô¡®-¡¯Ç°ÃæÎªÊý×Ö»òÕßÓÒÀ¨ºÅÔò¡®-¡¯Îª¼õºÅ
-			2.ÆäËûÇé¿ö¶¼ÊÇ¸ººÅ£¬²¢ÓÃ"#"´úÌæ£¬ÊÇÒ»ÔªËã×Ó
-		4.ËÄ²ãÓÅÏÈ¼¶(-,+),(*,/,%),(^)(#)
+æ€è·¯ï¼š
+	å…¥æ ˆè§„åˆ™ï¼š
+		1.å·¦æ‹¬å·ç›´æŽ¥å…¥æ ˆ
+		2.å³æ‹¬å·å…¥æ ˆå‰ï¼Œé€æ¬¡å¼¹å‡ºæ‰€æœ‰æ“ä½œç¬¦å¹¶è¿›è¡Œè¿ç®—ç›´åˆ°å·¦æ‹¬å·
+		3.â€˜-â€™çš„å¤„ç†ï¼š
+			1.è‹¥â€˜-â€™å‰é¢ä¸ºæ•°å­—æˆ–è€…å³æ‹¬å·åˆ™â€˜-â€™ä¸ºå‡å·
+			2.å…¶ä»–æƒ…å†µéƒ½æ˜¯è´Ÿå·ï¼Œå¹¶ç”¨"#"ä»£æ›¿ï¼Œæ˜¯ä¸€å…ƒç®—å­
+		4.å››å±‚ä¼˜å…ˆçº§(-,+),(*,/,%),(^)(#)
 //*/
 #include <iostream>
 #include <sstream>
@@ -47,7 +47,7 @@ using namespace std;
 class Calculate {
 	map<char, int> optPriority;
 	string expression;
-	map<string, int> dict;//´æ´¢±äÁ¿ÒÔ¼°ÆäËù´ú±íµÄÖµ
+	map<string, int> dict;//å­˜å‚¨å˜é‡ä»¥åŠå…¶æ‰€ä»£è¡¨çš„å€¼
 	int error;//error == 1, divided by 0; error == 2, expression is wrong
 	stack<int> numStack;
 	stack<char> optStack;
@@ -329,7 +329,7 @@ int Calculate::cal()
 
 void Calculate::start(string s)
 {
-	//²éÑ¯²Ù×÷
+	//æŸ¥è¯¢æ“ä½œ
 	if (s[0] == '?')
 	{
 		this->expression = s.substr(1);
@@ -338,14 +338,14 @@ void Calculate::start(string s)
 	}
 
 	int index = s.find_first_of('=');
-	int flag = 1;//Ä¬ÈÏÕâÊÇ¸³Öµ²Ù×÷
+	int flag = 1;//é»˜è®¤è¿™æ˜¯èµ‹å€¼æ“ä½œ
 	for (int i = index + 1; i < (int)s.size() && flag; ++i)
 	{
 		if (s[i] < '0' || s[i] > '9')
 			flag = 0;
 	}
 
-	//¸³Öµ²Ù×÷
+	//èµ‹å€¼æ“ä½œ
 	if (flag)
 	{
 		this->expression = s;
@@ -355,7 +355,7 @@ void Calculate::start(string s)
 		return;
 	}
 
-	//¼ÆËã²Ù×÷
+	//è®¡ç®—æ“ä½œ
 	else
 	{
 		this->expression = "";
