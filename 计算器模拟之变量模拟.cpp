@@ -37,6 +37,8 @@ abc=-21
 			2.其他情况都是负号，并用"#"代替，是一元算子
 		4.四层优先级(-,+),(*,/,%),(^)(#)
 //*/
+
+
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -44,26 +46,27 @@ abc=-21
 #include <math.h>
 #include <map>
 using namespace std;
-class Calculate {
+class Calculate
+{
 	map<char, int> optPriority;
 	string expression;
-	map<string, int> dict;//存储变量以及其所代表的值
-	int error;//error == 1, divided by 0; error == 2, expression is wrong
+	map<string, int> dict; //存储变量以及其所代表的值
+	int error;			   //error == 1, divided by 0; error == 2, expression is wrong
 	stack<int> numStack;
 	stack<char> optStack;
 
-
-	int sTOi(int firstindex, int lastindex);//transport expression to number
-	string iTOs(int num);//translate number to string
-	void changeMinus();//find '-' and judge if it means minus, if so, change it into '#'
+	int sTOi(int firstindex, int lastindex); //transport expression to number
+	string iTOs(int num);					 //translate number to string
+	void changeMinus();						 //find '-' and judge if it means minus, if so, change it into '#'
 
 	void pushINTOstack();
-	void pushOPT(int index);//push the operation at index into optStack and calculate value if necessary
+	void pushOPT(int index); //push the operation at index into optStack and calculate value if necessary
 
-	void computeAB(char opt);//comput 'a opt b'
+	void computeAB(char opt); //comput 'a opt b'
 
-	void Error();//do when error occurs
+	void Error(); //do when error occurs
 	int cal();
+
 public:
 	Calculate();
 	void start(string expression);
@@ -120,7 +123,7 @@ void Calculate::changeMinus()
 
 void Calculate::computeAB(char opt)
 {
-	if (numStack.empty())//not enough number
+	if (numStack.empty()) //not enough number
 	{
 		if (!error)
 			error = 2;
@@ -134,11 +137,9 @@ void Calculate::computeAB(char opt)
 		return;
 	}
 
-
-
 	int b = numStack.top();
 	numStack.pop();
-	if (numStack.empty())//not enough number
+	if (numStack.empty()) //not enough number
 	{
 		if (!error)
 			error = 2;
@@ -150,15 +151,23 @@ void Calculate::computeAB(char opt)
 	double ad = a, bd = b;
 	switch (opt)
 	{
-	case '-':c = a - b; break;
-	case '+':c = a + b; break;
-	case '*':c = a * b; break;
-	case '%':c = a % b; break;
+	case '-':
+		c = a - b;
+		break;
+	case '+':
+		c = a + b;
+		break;
+	case '*':
+		c = a * b;
+		break;
+	case '%':
+		c = a % b;
+		break;
 	case '/':
 		if (b == 0)
 		{
 			if (!error)
-				error = 1;//divided by 0
+				error = 1; //divided by 0
 		}
 		else
 			c = a / b;
@@ -205,7 +214,7 @@ void Calculate::pushOPT(int index)
 	{
 		if (opt == ')')
 		{
-			int flag = 1;//mark expression is wrong for there is no '('
+			int flag = 1; //mark expression is wrong for there is no '('
 			while (!optStack.empty())
 			{
 				char opt_tmp = optStack.top();
@@ -219,7 +228,7 @@ void Calculate::pushOPT(int index)
 				if (error)
 					return;
 			}
-			if (flag)//there is no '('
+			if (flag) //there is no '('
 			{
 				if (!error)
 					error = 2;
@@ -274,7 +283,8 @@ void Calculate::pushINTOstack()
 		if (expression[i] >= '0' && expression[i] <= '9')
 		{
 			int j = i;
-			for (; expression[j] >= '0' && expression[j] <= '9'; j++);
+			for (; expression[j] >= '0' && expression[j] <= '9'; j++)
+				;
 			numStack.push(sTOi(i, j));
 			i = j - 1;
 		}
@@ -338,7 +348,7 @@ void Calculate::start(string s)
 	}
 
 	int index = s.find_first_of('=');
-	int flag = 1;//默认这是赋值操作
+	int flag = 1; //默认这是赋值操作
 	for (int i = index + 1; i < (int)s.size() && flag; ++i)
 	{
 		if (s[i] < '0' || s[i] > '9')
